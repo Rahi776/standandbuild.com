@@ -1,0 +1,19 @@
+<footer class="the-footer">
+  <div class="footer-grid">
+    <div class="address">
+      Stand and Build LLC <br>
+      {{ general.address.0.line-1 }} <br>
+      {{ general.address.0.line-2 }} <br>
+      {{ general.address.0.line-3 }}
+    </div>
+    <div class="contact">
+      {{ general.phone }} <br>
+      <a href="mailto:{{ general.email }}">{{ general.email }}</a>
+    </div>
+    <div class="social">
+      <a href={{ general.facebook }} target="_blank"><img src="/images/facebook-black.svg" alt="Facebook" /></a>
+      <a href={{ general.instagram }} target="_blank"><img src="/images/instagram-black.svg" alt="Instagram" /></a>
+      <a href={{ general.linkedin }} target="_blank"><img src="/images/linkedin-black.svg" alt="LinkedIn" /></a>
+    </div>
+  </div>
+</footer>

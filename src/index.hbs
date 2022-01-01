@@ -1,0 +1,55 @@
+---
+layout: layouts/base.hbs
+title: Stand and Build
+nav_page: home
+styles: home.css
+script: home.js
+---
+{{> nav-underscore}}
+<div class="home-main">
+  <h2 class="lead">{{ home.lead }}</h2>
+  <div class="hero">
+   <img id="img-responsive" src="https://res.cloudinary.com/stand-and-build-website/image/upload/v1639668480/homepage_collage__qedcra.jpg" alt="">
+  </div>
+  
+  <h2 id="para-responsive" class="para-responsive" >A dedicated design team coupled with our in-house craftspeople means a  boutique experience for our clients. <a href="#" style="color: #e60094;text-decoration: none;" id="para" >Begin your idea with us today.</a> </h2>
+   <script>
+const x=document.getElementById('para');
+const y=document.getElementById('hamburger-checkbox');
+x.onclick=function(){
+  y.click();
+}
+  </script>
+  <div class="our-core-principles">
+    <h2 style="font-family: 'FormaDJRDisplay';">Our Core Principles</h2>
+    <div class="enumerated-principles">
+      <div class="principle i">
+        <h3>i.</h3>
+        <p>{{ home.principle_i }}</p>
+      </div>
+      <div class="principle ii">
+        <h3>ii.</h3>
+        <p>{{ home.principle_ii }}</p>
+      </div>
+      <div class="principle iii">
+        <h3>iii.</h3>
+        <p>{{ home.principle_iii }}</p>
+      </div>
+      <div class="principle iv">
+        <h3>iv.</h3>
+        <p>{{ home.principle_iv }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>

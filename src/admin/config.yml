@@ -1,0 +1,214 @@
+backend:
+  name: git-gateway
+  branch: publish
+media_folder: "images/uploads"
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: stand-and-build-website
+    api_key: 629439875161551
+collections:
+  - label: "Settings"
+    name: "settings"
+    files:
+      - label: "Settings"
+        name: "settings"
+        file: "src/_data/general.json"
+        fields:
+          - label: "Site Description"
+            name: "site_description"
+            widget: "string"
+          - label: "Address"
+            name: "address"
+            widget: "list"
+            fields:
+              - { label: Line-1, name: line-1, widget: string }
+              - { label: Line-2, name: line-2, widget: string }
+              - { label: Line-3, name: line-3, widget: string }
+          - label: "Phone Number"
+            name: "phone"
+            widget: "string"
+          - label: "Email"
+            name: "email"
+            widget: string
+          - label: "Facebook Profile URL"
+            name: "facebook"
+            widget: "string"
+          - label: "Instagram Profile URL"
+            name: "instagram"
+            widget: "string"
+          - label: "LinkedIn Profile URL"
+            name: "linkedin"
+            widget: "string"
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "src/_data/home.json"
+        fields:
+          - label: "Lead"
+            name: "lead"
+            widget: "string"
+          - label: "Left Hero Image"
+            name: "hero_image_left"
+            widget: "image"
+          - label: "Left Hero Alt"
+            name: "hero_alt_left"
+            widget: "string"
+          - label: "Left Hero Image Caption"
+            name: "hero_caption_left"
+            widget: "string"
+          - label: "Right Hero Image"
+            name: "hero_image_right"
+            widget: "image"
+          - label: "Right Hero Alt"
+            name: "hero_alt_right"
+            widget: "string"
+          - label: "Right Hero Image Caption"
+            name: "hero_caption_right"
+            widget: "string"
+          - label: "Principles Subheading"
+            name: "principles_subheading"
+            widget: "string"
+          - label: "Principle I"
+            name: "principle_i"
+            widget: "string"
+          - label: "Principle II"
+            name: "principle_ii"
+            widget: "string"
+          - label: "Principle III"
+            name: "principle_iii"
+            widget: "string"
+          - label: "Principle IV"
+            name: "principle_iv"
+            widget: "string"
+      - label: "Projects Page"
+        name: "projects"
+        file: "src/_data/projects.json"
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields: 
+            - label: "Project Name"
+              name: "name"
+              widget: "string"
+            - label: "Description"
+              name: "description"
+              widget: "list"
+              fields:
+                - { label: Paragraph, name: paragraph, widget: text }
+            - label: "Location"
+              name: "location"
+              widget: "string"
+              required: false
+            - label: "Date"
+              name: "date" 
+              # have to use string widget instead of date due to design reqs
+              widget: "string"
+              required: false
+            - label: "Project Type"
+              name: "projectType"
+              widget: "string"
+              required: false
+            - label: "Project Images"
+              name: "images"
+              widget: "list"
+              fields:
+              - { label: Image, name: image, widget: image }
+            - label: "Tags"
+              name: "tags"
+              widget: "list"
+              required: false
+              fields:
+                - { label: Tag, name: tag, widget: string }
+      - label: "Capabilities Page"
+        name: "capabilities"
+        file: "src/_data/capabilities.json"
+        fields:
+          - label: "Lead"
+            name: "lead"
+            widget: "string"
+          - label: "Prototyping"
+            name: "prototyping"
+            widget: "text"
+          - label: "Concept & Design"
+            name: "concept_and_design"
+            widget: "text"
+          - label: "Retail Displays"
+            name: "retail_displays"
+            widget: "text"
+          - label: "Fine Art Fabrication"
+            name: "fine_art_fabrication"
+            widget: "text"
+          - label: "Full Service Installations"
+            name: "full_service_installations"
+            widget: "text"
+          - label: "Interiors"
+            name: "interiors"
+            widget: "text"
+          - label: "Pedestals"
+            name: "pedestals"
+            widget: "text"
+          - label: "Lighting & Media Integration"
+            name: "lighting_and_media_integration"
+            widget: "text"
+          - label: "Sustainable Practices"
+            name: "sustainable_practices"
+            widget: "text"
+          - label: "Additional Info"
+            name: "additional_info"
+            widget: "text"
+      - label: "Clients Page"
+        name: "clients"
+        file: "src/_data/clients.json"
+        fields:
+          - label: "Lead"
+            name: "lead"
+            widget: "string"
+          - label: "Hero Image"
+            name: "hero_image"
+            widget: image
+          - label: "Clients"
+            name: "clientList"
+            widget: "list"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: text }
+      - label: "About Page"
+        name: "about"
+        file: "src/_data/about.json"
+        fields:
+          - label: "Lead"
+            name: "lead"
+            widget: "string"
+          - label: "Hero Content"
+            name: "hero_content"
+            widget: "list"
+            fields:
+              - { label: Paragraph, name: paragraph, widget: string }
+          - label: "Team Picture"
+            name: "team_picture"
+            widget: "image"
+          - label: "Team Picture Caption"
+            name: "team_picture_caption"
+            widget: "string"
+          - label: "Team Portraits"
+            name: "team_members"
+            widget: "list"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Photo, name: photo, widget: image }
+          - label: "Upcoming Events"
+            name: "upcoming_events"
+            widget: "list"
+            fields:
+              - { label: Year, name: year, widget: date, dateFormat: YYYY }
+              - { label: Description, name: description, widget: string }
+          - label: "Past Events"
+            name: "past_events"
+            widget: "list"
+            fields:
+              - { label: Year, name: year, widget: date, dateFormat: YYYY }
+              - { label: Description, name: description, widget: string }

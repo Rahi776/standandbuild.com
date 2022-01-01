@@ -1,0 +1,70 @@
+---
+layout: layouts/base.hbs
+title: About S+B
+nav_page: about
+styles: about.css
+group_show_url: https://res.cloudinary.com/stand-and-build-website/image/upload/v1579388915/super-clamp-stand_q1uanq.png
+alchemy_url: https://res.cloudinary.com/stand-and-build-website/image/upload/v1579388915/eli-donohue_alchemy_dmblkp.png
+tabernacle_url: https://res.cloudinary.com/stand-and-build-website/image/upload/v1579388915/joann-harrah_tabernacle-and-cabins_l4s2lh.png
+---
+{{> nav-underscore}}
+<div class="about-main">
+  <div class="hero">
+    <h2 class="lead">{{about.lead}}</h2>
+    <figure class="the-team">
+      <img {{{ responsiveImgSrc about.team_picture 225 359 480 726 956 }}} alt="The Team" />
+      <figcaption>{{{ about.team_picture_caption }}}</figcaption>
+    </figure>
+    <div class="culture">
+      {{#each about.hero_content}}
+      <p>{{{this.paragraph}}}</p>
+      {{/each}}
+    </div>
+  </div>
+  <div class="team">
+    <h3>The Team</h3>
+    <div class="team-pics">
+      {{#each about.team_members}}
+      <figure class="team-member">
+        <img {{{ responsiveImgSrc this.photo 96 161 252 273 350 }}} alt="{{ this.name }}" />
+        <figcaption>{{ this.name }}</figcaption>
+      </figure>
+      {{/each}}
+    </div>
+  </div>
+  <div class="community-events">
+    <h3>Community Events</h3>
+    <div class="event-grid">
+      <figure class="group-show">
+        <img {{{ responsiveImgSrc group_show_url 114 126 197 259 342}}} alt="Group Show">
+        <figcaption><b>Group Show,</b> August 2018</figcaption>
+      </figure>
+      <figure class="alchemy">
+        <img {{{ responsiveImgSrc alchemy_url 219 243 380 500 662 }}} alt="Alchemy">
+        <figcaption><b>Alchemy,</b> Eli Donahue 2016</figcaption>
+      </figure>
+      <figure class="tabernacle">
+        <img {{{ responsiveImgSrc tabernacle_url 300 300 380 500 662 }}} alt="Tabernacle and Cabins">
+        <figcaption><b>Tabernacle and Cabins,</b> Joann Harrah 2018</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="event-schedule">
+    <div class="upcoming">
+      <h4>Upcoming Events</h4>
+      <ul>
+        {{#each about.upcoming_events}}
+        <li><b>{{toYear this.year}}</b> {{this.description}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="past">
+      <h4>Past Events</h4>
+      <ul>
+        {{#each about.past_events}}
+        <li><b>{{toYear this.year}}</b> {{this.description}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

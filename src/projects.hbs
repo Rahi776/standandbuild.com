@@ -1,0 +1,47 @@
+---
+layout: layouts/base.hbs
+title: S+B Projects
+nav_page: projects
+styles: projects.css
+script: projects.js
+---
+{{> nav-underscore}}
+<div class="projects-main">
+  <div class="projects-grid">
+    {{#each projects.projects }}
+    {{#if this.images }}
+    <div class="project">
+      <h3>{{this.name}}</h3>
+      <div class="description-box">
+        {{#each this.description }}
+        <p class="description">{{{this.paragraph}}}</p>
+        {{/each}}
+      </div>
+      <div class="spacer"></div>
+      <div class="tags">
+        <ul>
+          <li>{{this.location}}</li>
+          <li>{{this.date}}</li>
+          <li>{{this.projectType}}</li>
+        </ul>
+        {{#if this.tags}}
+        <h5>{{ joinTagsArray this.tags }}</h5>
+        {{/if}}
+      </div>
+      <div class="image-grid">
+        <img class="lazyload main-image main-image-{{@index}}"
+          {{{ responsiveImgSrc this.images.0.image 339 354 558 918 1161 }}} alt="{{this.name}}" />
+        <ol class="image-bar">
+          {{#each this.images }}
+          <li>
+            <img class="lazyload thumbnail thumb-{{@../index}}" {{{ responsiveImgSrc this.image 55 58 91 150 189 }}}
+              alt="{{../this.name}} thumbnail {{@index}}" />
+          </li>
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+    {{/if}}
+    {{/each}}
+  </div>
+</div>

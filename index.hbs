@@ -1,0 +1,49 @@
+---
+layout: layouts/base.hbs
+title: Stand and Build
+nav_page: home
+styles: home.css
+script: home.js
+---
+{{> nav-underscore}}
+<div class="home-main">
+  <h2 class="lead">{{ home.lead }}</h2>
+  <div>
+         <a href="https://www.standandbuild.com"><img style="width: 100%; height: 30%;" src="https://res.cloudinary.com/stand-and-build-website/image/upload/v1639668480/homepage_collage__qedcra.jpg" alt=""></a>
+
+  </div>
+
+  <h2 class="principles">{{ home.principles_subheading }}</h2>
+  <div class="our-core-principles">
+    <h2>Our Core Principles</h2>
+    <div class="enumerated-principles">
+      <div class="principle i">
+        <h3>i.</h3>
+        <p>{{ home.principle_i }}</p>
+      </div>
+      <div class="principle ii">
+        <h3>ii.</h3>
+        <p>{{ home.principle_ii }}</p>
+      </div>
+      <div class="principle iii">
+        <h3>iii.</h3>
+        <p>{{ home.principle_iii }}</p>
+      </div>
+      <div class="principle iv">
+        <h3>iv.</h3>
+        <p>{{ home.principle_iv }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>

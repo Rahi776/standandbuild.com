@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'FormaDJRDisplay';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap; /* or block, swap, fallback, optional */
+  src: url('/fonts/FormaDJRDisplay-ExtraLight.woff2') format('woff2'), /* will be preloaded */ 
+       url('/fonts/FormaDJRDisplay-ExtraLight.woff') format('woff'),
+       url('/fonts/FormaDJRDisplay-ExtraLight.eot') format('embedded-opentype');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face {
+  font-family: 'FormaDJRDisplay';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap; /* or block, swap, fallback, optional */
+  src: url('/fonts/FormaDJRDisplay-Light.woff2') format('woff2'), /* will be preloaded */ 
+       url('/fonts/FormaDJRDisplay-Light.woff') format('woff'),
+       url('/fonts/FormaDJRDisplay-Light.eot') format('embedded-opentype');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face {
+  font-family: 'FormaDJRDisplay';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap; /* or block, swap, fallback, optional */
+  src: url('/fonts/FormaDJRDisplay-Regular.woff2') format('woff2'), /* will be preloaded */ 
+       url('/fonts/FormaDJRDisplay-Regular.woff') format('woff'),
+       url('/fonts/FormaDJRDisplay-Regular.eot') format('embedded-opentype');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face {
+  font-family: 'FormaDJRDisplay';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block; /* or block, swap, fallback, optional */
+  src: url('/fonts/FormaDJRDisplay-Medium.woff2') format('woff2'), /* will be preloaded */ 
+       url('/fonts/FormaDJRDisplay-Medium.woff') format('woff'),
+       url('/fonts/FormaDJRDisplay-Medium.eot') format('embedded-opentype');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face {
+  font-family: 'FormaDJRDisplay';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap; /* or block, swap, fallback, optional */
+  src: url('/fonts/FormaDJRDisplay-Bold.woff2') format('woff2'), /* will be preloaded */ 
+       url('/fonts/FormaDJRDisplay-Bold.woff') format('woff'),
+       url('/fonts/FormaDJRDisplay-Bold.eot') format('embedded-opentype');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face {
+  font-family: 'FormaDJRDisplay';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap; /* or block, swap, fallback, optional */
+  src: url('/fonts/FormaDJRDisplay-LightItalic.woff2') format('woff2'), /* will be preloaded */ 
+       url('/fonts/FormaDJRDisplay-LightItalic.woff') format('woff'),
+       url('/fonts/FormaDJRDisplay-LightItalic.eot') format('embedded-opentype');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+body {
+  font-family: FormaDJRDisplay, Helvetica, sans-serif;
+}

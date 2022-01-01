@@ -1,0 +1,54 @@
+@import "reset";
+@import "colors";
+@import "breakpoints";
+@import "fonts";
+@import "header";
+@import "footer";
+
+body {
+  color: $color_text;
+  background-color: $color_bg;
+
+  img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  font-size: 0.8125rem;
+
+  h2 {
+    font-size: 1.231em;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.06em;
+  }
+
+  @media #{$tablet-breakpoint} {
+    font-size: 1rem;
+    h2 {
+      font-size: 1.625em;
+    }
+  }
+
+  @media #{$small-desktop-breakpoint} {
+    font-size: 1.25rem;
+
+    h2 {
+      font-size: 1.8125em;
+    }
+  }
+
+  @media #{$desktop-breakpoint} {
+    font-size: 1.5rem;
+
+    h2 {
+      font-size: 2em;
+    }
+  }
+
+  @media #{$large-desktop-breakpoint} {
+    font-size: 1.875rem;
+  }
+}

@@ -1,0 +1,21 @@
+---
+layout: layouts/base.hbs
+title: S+B Clients
+nav_page: clients
+styles: clients.css
+---
+{{> nav-underscore}}
+<div class="clients-main">
+  <h2 class="lead">{{clients.lead}}</h2>
+  <div class="hero">
+    <img {{{ responsiveImgSrc clients.hero_image 354 703 1098 1564 2202 }}} alt="Clients" />
+  </div>
+  <div class="client-grid">
+    {{#each clients.clientList}}
+    <div class="client">
+      <h3>{{this.name}}</h3>
+      <p>{{{this.description}}}</p>
+    </div>
+    {{/each}}
+  </div>
+</div>

@@ -1,0 +1,42 @@
+{
+  "lead": "We are proud to work with a diverse range of clients, from startups to established brands. Here are a few...",
+  "hero_image": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1590597022/51-02/3Client_nct7gl.jpg",
+  "clientList": [
+    {
+      "name": "Saks Fifth Ave",
+      "description": "Stand and Build’s creations occupy the windows at the historic Saks Fifth Avenue flagship several times a year. In 2019 the redesign of the first floor of Saks coincided with 17 Iconic Handbags window displays. Our elegant and expertly handcrafted structures set us apart."
+    },
+    {
+      "name": "Bottega Veneta",
+      "description": "Working with this Italian luxury fashion house requires a high level of craft and innovation. A recent project for Bottega Veneta included several rounds of samples, detailed technical drawings, fabrication and a week of on-site installation for its third new-format show, Salon 03, in Detroit."
+    },
+    {
+      "name": "The New Museum",
+      "description": "We’ve built several site specific installations for the New Museum, one of the leading institutions for contemporary art. The New Museum aims to promote new art and new ideas from artists that haven’t yet been given a lot of exposure."
+    },
+    {
+      "name": "Lévy Gorvy",
+      "description": "Over the years we’ve crafted a variety of pedestals for Lévy Gorvy’s gallery exhibitions and art fairs. For the “Calder / Kelly” exhibition in New York in 2018, we installed large plinths under Calder mobiles that accentuated their grandeur and met Calder Foundation specifications."
+    },
+    {
+      "name": "Daniel Buren",
+      "description": "The fabrication of Daniel Buren’s artwork requires precision and nuance. Our skilled fabrication team delights in just this kind of endeavor."
+    },
+    {
+      "name": "Fink & Platt Architects",
+      "description": "Fink & Platt came to us about the redesign of a private residence on Central Park West. Together we created a gorgeous rift sawn oak and marble credenza that will stay in their family for generations to come."
+    },
+    {
+      "name": "The Shed",
+      "description": "Stand and Build has produced various stage sets and pedestal platforms for The Shed since its inception in early 2019. The recently opened cultural center commissions, produces, and presents a wide range of visual and performing arts exhibitions and events."
+    },
+    {
+      "name": "Patagonia",
+      "description": "As part of their ethos, the well-known outdoor clothing company is committed to protecting our environment, so we outfitted their SoHo flagship store with reclaimed wood from Brooklyn’s Domino Sugar Factory."
+    },
+    {
+      "name": "Anthony Sperduti",
+      "description": "After first working with the branding agency Mythology, formerly Partners & Spade, the founding co-owner, Anthony Sperduti, asked us to build a media cabinet of his design. Architectural Digest featured Sperduti’s New York apartment <a href=\"https://www.architecturaldigest.com/story/anthony-sperduti-tribeca-loft\" target=\"_blank\">online</a>."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+---
+layout: layouts/base.hbs
+title: S+B Capabilities
+nav_page: capabilities
+styles: capabilities.css
+---
+{{> nav-underscore}}
+<div class="capabilities-main">
+  <div class="capabilities-grid">
+    <h2 class="lead">{{ capabilities.lead }}</h2>
+    <input type="radio" id="proto" name="cap-radio">
+    <label class="capability odd" for="proto">
+      <figure class="icon">
+        <img class="nonhover" src="/images/prototyping-nonhover.svg" alt="Prototyping">
+        <img class="combined" src="/images/prototyping-combined.svg" alt="Prototyping">
+        <figcaption>Prototyping</figcaption>
+      </figure>
+      <p>{{{ capabilities.prototyping }}}</p>
+    </label>
+    <input type="radio" id="concept" name="cap-radio">
+    <label class="capability even" for="concept">
+      <figure class="icon">
+        <img class="nonhover" src="/images/concept-nonhover.svg" alt="Concept & Design">
+        <img class="combined" src="/images/concept-combined.svg" alt="Concept & Design">
+        <figcaption>Concept & Design</figcaption>
+      </figure>
+      <p>{{{ capabilities.concept_and_design }}}</p>
+    </label>
+    <input type="radio" id="retail" name="cap-radio">
+    <label class="capability odd" for="retail">
+      <figure class="icon">
+        <img class="nonhover" src="/images/retail-nonhover.svg" alt="Retail Displays">
+        <img class="combined" src="/images/retail-combined.svg" alt="Retail Displays">
+        <figcaption>Retail Displays</figcaption>
+      </figure>
+      <p>{{{ capabilities.retail_displays }}}</p>
+    </label>
+    <input type="radio" id="fabrication" name="cap-radio">
+    <label class="capability even" for="fabrication">
+      <figure class="icon">
+        <img class="nonhover" src="/images/fabrication-nonhover.svg" alt="Fine Art Fabrication">
+        <img class="combined" src="/images/fabrication-combined.svg" alt="Fine Art Fabrication">
+        <figcaption>Fine Art Fabrication</figcaption>
+      </figure>
+      <p>{{{ capabilities.fine_art_fabrication }}}</p>
+    </label>
+    <input type="radio" id="installations" name="cap-radio">
+    <label class="capability odd" for="installations">
+      <figure class="icon">
+        <img class="nonhover" src="/images/installations-nonhover.svg" alt="Full Service Installations">
+        <img class="combined" src="/images/installations-combined.svg" alt="Full Service Installations">
+        <figcaption>Full Service Installations</figcaption>
+      </figure>
+      <p>{{{ capabilities.full_service_installations }}}</p>
+    </label>
+    <input type="radio" id="interiors" name="cap-radio">
+    <label class="capability even" for="interiors">
+      <figure class="icon">
+        <img class="nonhover" src="/images/interiors-nonhover.svg" alt="Interiors">
+        <img class="combined" src="/images/interiors-combined.svg" alt="Interiors">
+        <figcaption>Interiors</figcaption>
+      </figure>
+      <p>{{{ capabilities.interiors }}}</p>
+    </label>
+    <input type="radio" id="pedestals" name="cap-radio">
+    <label class="capability odd" for="pedestals">
+      <figure class="icon">
+        <img class="nonhover" src="/images/pedestals-nonhover.svg" alt="Pedestals">
+        <img class="combined" src="/images/pedestals-combined.svg" alt="Pedestals">
+        <figcaption>Pedestals</figcaption>
+      </figure>
+      <p>{{{ capabilities.pedestals }}}</p>
+    </label>
+    <input type="radio" id="lighting" name="cap-radio">
+    <label class="capability even" for="lighting">
+      <figure class="icon">
+        <img class="nonhover" src="/images/lighting-nonhover.svg" alt="Lighting & Media Integration">
+        <img class="combined" src="/images/lighting-combined.svg" alt="Lighting & Media Integration">
+        <figcaption>Lighting & Media Integration</figcaption>
+      </figure>
+      <p>{{{ capabilities.lighting_and_media_integration }}}</p>
+    </label>
+    <input type="radio" id="sustainable" name="cap-radio">
+    <label class="capability odd" for="sustainable">
+      <figure class="icon">
+        <img class="nonhover" src="/images/sustainable-nonhover.svg" alt="Sustainable Practices">
+        <img class="combined" src="/images/sustainable-combined.svg" alt="Sustainable Practices">
+        <figcaption>Sustainable Practices</figcaption>
+      </figure>
+      <p>{{{ capabilities.sustainable_practices }}}</p>
+    </label>
+  </div>
+  <h3 class="additional-info">{{{ capabilities.additional_info }}}</h3>
+
+</div>

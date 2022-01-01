@@ -1,0 +1,100 @@
+{
+  "lead": "We harness the collective knowledge and skills of our team to negotiate the best possible solutions. We do this work because we love it.",
+  "hero_content": [
+    {
+      "paragraph": "Our studio: industrial designers, metal workers, producers, fine artists, mechanical animators, illustrators, photographers, acrylic specialists, fine furniture makers, tattoo artists, silk screen printers, performance artists, ceramicists, and much more."
+    }
+  ],
+  "team_picture": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1628602856/teamphoto2_phuzpb.jpg",
+  "team_picture_caption": "<b>The Team,</b> circa 2021",
+  "team_members": [
+    {
+      "name": "Bird Birdsall",
+      "photo": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1626803308/Bird_Birdsalll_walz23.jpg"
+    },
+    {
+      "name": "Elly Castle",
+      "photo": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1637269056/Elly_Castle_portrait_ej4ttg.jpg"
+    },
+    {
+      "name": "Andrew Goulet",
+      "photo": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1623257189/Andrew_Goulet_portrait_zbsdq5.jpg"
+    },
+    {
+      "name": "Jen Hubbell",
+      "photo": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1579382014/jen_hubbell_ofktyk.jpg"
+    },
+    {
+      "name": "Evan Hryshko",
+      "photo": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1628522159/Evan_Hryshko_rsjamn.jpg"
+    },
+    {
+      "name": "Gabe Meldahl",
+      "photo": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1579382013/gabe_meldahl_xiqc0n.jpg"
+    },
+    {
+      "name": "Troy Mock",
+      "photo": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1609780121/Troy_S_Bwebsite_j8u1xr.png"
+    },
+    {
+      "name": "Naleh Park",
+      "photo": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1579382014/naleh_park_apznby.jpg"
+    },
+    {
+      "name": "Jason Schneider",
+      "photo": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1579382014/jason_schneider_cpfzmq.jpg"
+    },
+    {
+      "name": "Kristin Taibl",
+      "photo": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1579382014/kristin_taibl_setdog.jpg"
+    },
+    {
+      "name": "Stephanie Tartick",
+      "photo": "https://res.cloudinary.com/stand-and-build-website/image/upload/v1579382014/stephanie_tartick_kffgip.jpg"
+    }
+  ],
+  "upcoming_events": [
+    {
+      "year": "2021-02-24T20:33:10.949Z",
+      "description": "Group art show"
+    }
+  ],
+  "past_events": [
+    {
+      "year": "2020-04-29T19:19:17.470Z",
+      "description": "Collective design workshops"
+    },
+    {
+      "year": "2019-01-14T04:16:18.780Z",
+      "description": "Stand and Build floor manager Kristin Taibl taught a lecture on the basics of building a pedestal"
+    },
+    {
+      "year": "2019-01-14T04:16:34.627Z",
+      "description": "Springtime seed planting party"
+    },
+    {
+      "year": "2018-01-14T04:16:52.381Z",
+      "description": "Group art show at Present Company in Bushwick, Brooklyn"
+    },
+    {
+      "year": "2018-01-01T05:00:00.000Z",
+      "description": "Stand and Build designer Chris Ceravolo taught an Intro to Rhino drawing class"
+    },
+    {
+      "year": "2017-01-14T04:17:42.117Z",
+      "description": "Attended a performance of the Takács Quartet at Carnegie Hall"
+    },
+    {
+      "year": "2017-01-01T05:00:00.000Z",
+      "description": "Curated art walk to gallery openings in Chelsea"
+    },
+    {
+      "year": "2016-01-01T05:00:00.000Z",
+      "description": "Group art show at Peninsula Art Space in Redhook, Brooklyn"
+    },
+    {
+      "year": "2016-01-01T05:00:00.000Z",
+      "description": "Participated in a design competition for \"Autism Speaks\""
+    }
+  ]
+}

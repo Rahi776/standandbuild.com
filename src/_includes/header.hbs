@@ -1,0 +1,48 @@
+<header>
+  <input type="checkbox" id="hamburger-checkbox" />
+  <label for="hamburger-checkbox">menu</label>
+
+  <div class="stand-and-build-logo"><span><a href="/">Stand and Build</a></span></div>
+
+  <nav class="top-nav">
+    <ul>
+      <li class="projects"><a href="/projects/">PROJECTS</a></li>
+      <li class="capabilities"><a href="/capabilities/">CAPABILITIES</a></li>
+      <li class="clients"><a href="/clients/">CLIENTS</a></li>
+      <li class="about"><a href="/about/">ABOUT</a></li>
+    </ul>
+  </nav>
+
+  <div class="hamburger">
+    <div class="hamburger-slice"></div>
+    <div class="hamburger-slice"></div>
+    <div class="hamburger-slice"></div>
+    <div class="contact">CONTACT</div>
+  </div>
+
+  <div class="menu">
+    <img class="close" src="/images/x.svg" alt="close" />
+    <nav>
+      <ul>
+        <li class="home"><a href="/">HOME</a></li>
+        <li class="projects"><a href="/projects/">PROJECTS</a></li>
+        <li class="capabilities"><a href="/capabilities/">CAPABILITIES</a></li>
+        <li class="clients"><a href="/clients/">CLIENTS</a></li>
+        <li class="about"><a href="/about/">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+      <p>Stand and Build LLC<br />
+        {{ general.address.0.line-1 }}, {{ general.address.0.line-2 }}<br />
+        {{general.address.0.line-3 }}<br /></p>
+      <p>{{ general.phone }}<br><a href="mailto:{{ general.email }}">{{ general.email }}</a></p>
+      <div class="social">
+        <a href={{ general.facebook }} target="_blank"><img src="/images/facebook.svg" alt="Facebook" /></a>
+        <a href={{ general.instagram }} target="_blank"><img src="/images/instagram.svg" alt="Instagram" /></a>
+        <a href={{ general.linkedin }} target="_blank"><img src="/images/linkedin.svg" alt="LinkedIn" /></a>
+      </div>
+    </div>
+  </div>
+
+</header>
+<div id="header-spacer"></div>

@@ -1,0 +1,340 @@
+$header_height: 8.63356em * 0.75;
+$header_side_padding: 2.5667em;
+$hamburger_width: 1.8667em;
+$hamburger_slice_height: 0.23333em;
+$hamburger_slice_margin: 0.35em;
+$hamburger_height: 3 * $hamburger_slice_height + 2 * $hamburger_slice_margin;
+$hamburger_top: ($header_height - $hamburger_height)/2;
+
+// The header and header-spacer need to have the same height
+header,
+#header-spacer {
+  height: $header_height;
+  font-size: 0.5357rem;
+
+  @media #{$tablet-breakpoint} {
+    font-size: 0.75rem;
+  }
+
+  @media #{$small-desktop-breakpoint} {
+    font-size: 1rem;
+  }
+
+  @media #{$desktop-breakpoint} {
+    font-size: 1.25rem;
+  }
+
+  @media #{$large-desktop-breakpoint} {
+    font-size: 1.5rem;
+  }
+}
+
+#header-spacer {
+  margin-bottom: 1.5rem;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding: 0 $header_side_padding;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: $color_bg;
+  z-index: 1;
+
+  label {
+    position: absolute;
+    // need this for accessibility of the menu
+    left: -100%;
+  }
+
+  a {
+    color: $color_text;
+    text-decoration: none;
+    transition: color 1s ease;
+    :link {
+      color: $color_text;
+    }
+    :visited {
+      color: $color_text;
+    }
+    :active {
+      color: $color_text;
+    }
+    :hover {
+      color: $color_text;
+    }
+  }
+
+  .stand-and-build-logo {
+    flex: 1;
+    z-index: 3;
+    color: $color_text;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.3333em;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .top-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 1;
+    user-select: none;
+
+    .hamburger-slice {
+      display: block;
+      width: $hamburger_width;
+      height: 2px;
+      border-radius: 4px;
+      margin-bottom: 3px;
+      position: relative;
+      background-color: $color_text;
+    }
+
+    :last-child {
+      margin-bottom: 0;
+    }
+
+    .contact {
+      display: none;
+    }
+  }
+
+  input {
+    // hidden checkbox
+    cursor: pointer;
+    opacity: 0;
+    font-size: 1em; // needed to make this move proportionally!
+    display: block;
+    position: absolute;
+    top: $hamburger_top;
+    right: $header_side_padding;
+    width: $hamburger_width;
+    margin: 0;
+    height: $hamburger_height;
+    z-index: 3;
+    -webkit-touch-callout: none;
+  }
+
+  input:checked ~ .menu {
+    transform: none;
+  }
+
+  input:checked ~ .stand-and-build-logo {
+    color: $color_menu_text;
+    a {
+      color: $color_menu_text;
+      :link {
+        color: $color_menu_text;
+      }
+      :visited {
+        color: $color_menu_text;
+      }
+      :active {
+        color: $color_menu_text;
+      }
+      :hover {
+        color: $color_menu_text;
+      }
+    }
+  }
+
+  .menu {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: $color_menu_text;
+    background-color: $color_menu_background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 1.64;
+    font-weight: 200;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+    img.close {
+      position: absolute;
+      font-size: 1em; // needed for positioning!
+      width: 1.288889em;
+      height: 1.288889em;
+      right: $header_side_padding;
+      top: $hamburger_top;
+
+      :hover {
+        cursor: pointer;
+      }
+    }
+
+    img {
+      cursor: pointer;
+    }
+
+    a {
+      color: $color_menu_text;
+      :link {
+        color: $color_menu_text;
+      }
+      :visited {
+        color: $color_menu_text;
+      }
+      :active {
+        color: $color_menu_text;
+      }
+      :hover {
+        color: $color_menu_text;
+      }
+    }
+
+    nav {
+      font-size: 1.8182em;
+      font-weight: 500;
+      margin-top: 17vh;
+      letter-spacing: 0.1em;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          margin-bottom: 1.5em;
+        }
+      }
+    }
+
+    .contact-info {
+      margin-bottom: 9.56vh;
+
+      p {
+        font-size: 1.283333em;
+        margin-bottom: 1.454em;
+      }
+
+      :last-child {
+        line-height: 2;
+      }
+
+      .social {
+        margin-top: 4.3vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 12.8em;
+
+        img {
+          width: 1.98em;
+        }
+      }
+    }
+  }
+
+  @media #{$tablet-breakpoint} {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+
+    .top-nav {
+      display: block;
+
+      ul {
+        li {
+          display: inline-block;
+          margin-left: 2.25em;
+        }
+      }
+    }
+
+    .hamburger {
+      margin-left: 4.83333em;
+
+      .hamburger-slice {
+        display: none;
+      }
+
+      .contact {
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    // HACK: this just covers the word "CONTACT"
+    input {
+      width: 5.2em;
+    }
+    // also account for difference in width of "CONTACT" and 'x'
+    input:checked {
+      width: $hamburger_width;
+    }
+
+    .menu {
+      nav {
+        display: none;
+      }
+
+      .contact-info {
+        margin-top: 32vh;
+
+        :last-child {
+          line-height: 3;
+        }
+
+        .social {
+          width: 8em;
+          margin-top: 8.25vh;
+
+          img {
+            width: 1.33em;
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$small-desktop-breakpoint} {
+    .stand-and-build-logo {
+      font-size: 2em;
+    }
+  }
+
+  @media #{$desktop-breakpoint} {
+    .hamburger {
+      margin-left: 5.6em;
+    }
+
+    .menu {
+      .contact-info {
+        margin-top: 44vh;
+
+        p {
+          font-size: 0.85em;
+        }
+
+        .social {
+          margin-top: 6.5vh;
+
+          img {
+            width: 1em;
+          }
+        }
+      }
+    }
+  }
+}

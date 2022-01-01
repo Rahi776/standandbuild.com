@@ -1,0 +1,12 @@
+$mobile: 375px;
+$tablet: 768px;
+$small-desktop: 1200px;
+$desktop: 1920px;
+$large-desktop: 2560px;
+$very-large-desktop: 3600px;
+
+$tablet-breakpoint: "(min-width: #{$tablet})";
+$small-desktop-breakpoint: "(min-width: #{$small-desktop})";
+$desktop-breakpoint: "(min-width: #{$desktop})";
+$large-desktop-breakpoint: "(min-width: #{$large-desktop})";
+$very-large-desktop-breakpoint: "(min-width: #{$very-large-desktop})"

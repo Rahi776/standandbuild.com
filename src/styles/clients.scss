@@ -1,0 +1,179 @@
+@import 'common';
+
+.clients-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.6875rem;
+
+  h2 {
+    font-size: 1.636em;
+  }
+
+  a:link {
+    color: $color_text;
+  }
+
+  a:visited {
+    color: $color_text;
+  }
+
+  a:hover {
+    color: $color_text;
+  }
+
+  a:active {
+    color: $color_text;
+  }
+
+  .lead {
+    align-self: baseline;
+    margin-left: 2.8%;
+    margin-bottom: 2em;
+    width: 75%;
+  }
+
+  .hero {
+    width: 94.4%;
+    margin-bottom: 4em;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .client-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    .client {
+      width: 41.333333%;
+      margin-bottom: 5em;
+      text-align: center;
+
+      h3 {
+        font-size: 1.4545em;
+        letter-spacing: 0.06em;
+        object-fit: contain;
+        margin-bottom: 1.2em;
+      }
+
+      p {
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.18;
+        letter-spacing: 0.06em;
+      }
+    }
+  }
+
+  @media #{$tablet-breakpoint} {
+    // padding: 28px 46px 6px 46px;
+    font-size: 0.8125rem;
+
+    h2 {
+      font-size: 2em;
+    }
+
+    .lead {
+      margin-left: 4.25%;
+      margin-bottom: 1.76em;
+    }
+
+    .hero {
+      width: 91.5%;
+    }
+
+    .client-grid {
+      width: 88.5%;
+
+      .client {
+        width: 29.4%;
+        margin-bottom: 3.39em;
+
+        h3 {
+          font-size: 1.23em;
+        }
+
+        p {
+          width: 100%;
+          // font-size: 13px;
+          line-height: 1.23;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  @media #{$small-desktop-breakpoint} {
+    font-size: 1rem;
+  }
+
+  @media #{$desktop-breakpoint} {
+    font-size: 1.1875rem;
+
+    h2 {
+      font-size: 2.53em;
+    }
+
+    .lead {
+      width: 56.875%;
+      margin-left: 9.271%;
+      margin-bottom: 1.458333em;
+    }
+
+    .hero {
+      width: 81.45%;
+    }
+
+    .client-grid {
+      width: 75.78%;
+
+      .client {
+        width: 25.1%;
+        margin-bottom: 2.632em;
+
+        h3 {
+          font-size: 1.89em;
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+
+  @media #{$large-desktop-breakpoint} {
+    font-size: 1.625rem;
+
+    h2 {
+      font-size: 2em;
+    }
+
+    .lead {
+      width: 47.8%;
+      margin-left: 7%;
+    }
+
+    .hero {
+      width: 86.015%;
+    }
+
+    .client-grid {
+      width: 80%;
+
+      .client {
+        width: 25.1%;
+
+        h3 {
+          font-size: 1.538em;
+          line-height: 0.75;
+        }
+
+        p {
+          line-height: 1.54;
+        }
+      }
+    }
+  }
+}
